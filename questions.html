@@ -18,44 +18,41 @@
         </div>
         <div class="container">
 
-            <form id="form" action="./results.html" method="GET">
+            <form id="form" action="insert.php" method="post">
                 <div class="form-group">
                   <label for="InputEmail1" id="formlabels">McMaster Email</label>
-                  <input type="email" class="form-control" id="InputEmail" placeholder="Email@mcmaster.ca" name="email">
+                  <input type="email" class="form-control" id="InputEmail" placeholder="Email@mcmaster.ca" name="user-email" required>
                 </div>
                 <div class="form-group">
                     <label for="first" id="formlabels">First Name</label>
-                    <input type="text" class="form-control" id="first" placeholder="Patrick" name="firstname">
+                    <input type="text" class="form-control" id="first" placeholder="Patrick" name="firstname" required>
                 </div>
                 <div class="form-group">
                     <label for="last" id="formlabels">Last Name</label>
-                    <input type="text" class="form-control" id="last" placeholder="Deane" name="lastname">
+                    <input type="text" class="form-control" id="last" placeholder="Deane" name="lastname" required>
                 </div>
 
                 <div>
                     <h4 id="question">What is your favorite study location?</h6>
                     <div class="radio" id="options1">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                          <input type="radio" name="q1" id="optionsRadios1" value="Mills" checked>
                           Mills
                         </label>
                       </div>
                       <div class="radio" id="options1">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                          <input type="radio" name="q1" id="optionsRadios1" value="Thode">
                           Thode
                         </label>
                       </div>
                       <div class="radio" id="options1">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                          <input type="radio" name="q1" id="optionsRadios1" value="Home">
                           Study at home
                         </label>
                       </div>
                 </div>
-
-
-
 
                 <button id="subbutton" type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
             </form>
