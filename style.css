@@ -4,22 +4,22 @@ body{
 
 #Title{
     font-family: 'Amatic SC', sans-serif !important;
-    font-size: 8rem;
     color: white;
     line-height: 1;
-    margin-top: 1em;
+    margin-top: 1rem;
+    font-size: 5rem;
 }
 
 #Description{
     
     color: white;
-    font-size: 2rem;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #begin_button{
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 #questions_header{
@@ -37,4 +37,18 @@ body{
 
 #options1{
     color: white;
+}
+
+@media (max-width: 600px){
+    #Description{
+        font-size: 0.75rem;
+    }
+
+    #desc_container{
+        width: 100% !important;
+    }
+
+    #begin_button{
+        font-size: 1rem;
+    }
 }
