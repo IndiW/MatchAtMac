@@ -1,0 +1,40 @@
+body{
+    font-family: 'Josefin Slab', serif !important;
+}
+
+#Title{
+    font-family: 'Amatic SC', sans-serif !important;
+    font-size: 8rem;
+    color: white;
+    line-height: 1;
+    margin-top: 1em;
+}
+
+#Description{
+    
+    color: white;
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#begin_button{
+    font-size: 2rem;
+}
+
+#questions_header{
+    color: white;
+}
+
+#formlabels{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#question{
+    color: white;
+}
+
+#options1{
+    color: white;
+}
