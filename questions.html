@@ -10,12 +10,19 @@
         <title>Match at Mac Qs</title>
     </head>
     <body class="bg-dark">
+      <div class="jumbotron-fluid" style="background-color:#292c30!important;margin-bottom: 1em;">
+
+      
         <div class="container text-center">
-            <h1 id="questions_header">Questions</h1>
+            <h1 id="Title">Questions</h1>
         </div>
-        <div class="container w-50">
-            <a class="btn btn-danger btn-lg btn-block" href="./index.html" role="button">Exit Quiz</a>
-        </div>
+        <div class="container text-center">
+          <a href="./index.html">
+            <img  id="homepage_image" style="margin-bottom: 1em;" src="./office.jpg" class="img-fluid border" alt="Responsive image">
+          </a>
+        </div>    
+      </div>
+
         <div class="container">
 
             <form id="form" action="insert.php" method="post">
@@ -24,39 +31,794 @@
                   <input type="email" class="form-control" id="InputEmail" placeholder="Email@mcmaster.ca" name="user-email" required>
                 </div>
                 <div class="form-group">
-                    <label for="first" id="formlabels">First Name</label>
+                    <label for="first" id="formlabels" style="font-weight: 700;">First Name</label>
                     <input type="text" class="form-control" id="first" placeholder="Patrick" name="firstname" required>
                 </div>
                 <div class="form-group">
-                    <label for="last" id="formlabels">Last Name</label>
+                    <label for="last" id="formlabels" style="font-weight: 700;">Last Name</label>
                     <input type="text" class="form-control" id="last" placeholder="Deane" name="lastname" required>
                 </div>
 
                 <div>
-                    <h4 id="question">What is your favorite study location?</h6>
+                  <h4 id="qheader">1. What type of relationship are you looking for? (check all that apply)</h4>
+                    <div class="col-sm-2" ></div>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="q1" value="1">
+                        <label class="form-check-label" for="gridCheck1" id="question">
+                          Platonic Friend
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="q2" value="1">
+                        <label class="form-check-label" for="gridCheck1" id="question">
+                          Monogamous Relationship
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="q3" value="1">
+                        <label class="form-check-label" for="gridCheck1" id="question">
+                          Casual Relationship
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="q4" value="1">
+                        <label class="form-check-label" for="gridCheck1" id="question">
+                          Open Relationship
+                        </label>
+                      </div>
+                    </div> 
+              </div>
+
+              <div>
+                <h4 id="qheader">2. What gender do you identify as?</h4>
+                <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q5" id="optionsRadios1" value="1">
+                      Cis Male
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q5" id="optionsRadios1" value="2">
+                      Cis Female
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q5" id="optionsRadios1" value="3" >
+                      Trans Male
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q5" id="optionsRadios1" value="4">
+                      Trans Female
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q5" id="optionsRadios1" value="5" >
+                      Non-binary
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q5" id="optionsRadios1" value="6">
+                      Not Listed
+                    </label>
+                  </div>
+            </div>
+
+
+            <div>
+              <h4 id="qheader">3. Which gender(s) do you want to match with? (check all that apply)</h4>
+                <div class="col-sm-2" ></div>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="q6" value="1">
+                    <label class="form-check-label" for="gridCheck1" id="question">
+                      Cis Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="q7" value="1">
+                    <label class="form-check-label" for="gridCheck1" id="question">
+                      Cis Female
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="q8" value="1">
+                    <label class="form-check-label" for="gridCheck1" id="question">
+                      Trans Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="q9" value="1">
+                    <label class="form-check-label" for="gridCheck1" id="question">
+                      Trans Female
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="q10" value="1">
+                    <label class="form-check-label" for="gridCheck1" id="question">
+                      Non-binary
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="q11" value="1">
+                    <label class="form-check-label" for="gridCheck1" id="question">
+                      Not Listed
+                    </label>
+                  </div>
+                </div> 
+          </div>
+
+          <div>
+            <h4 id="qheader">4. What is your Sexual Orientation?</h4>
+            <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="1">
+                  Heterosexual
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="2">
+                  Homosexual
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="3">
+                  Bisexual
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="3">
+                  Asexual
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="3">
+                  Pansexual
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="3">
+                  Questioning
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q12" id="optionsRadios1" value="4">
+                  Other
+                </label>
+              </div>
+              <div class="form-group">
+                <input placeholder="Other (Please specify)" type="text" class="form-control" id="other" name="q13" maxlength="15" data-rule-required="true" contenteditable="false">
+              </div>
+        </div>
+          
+
+        <div>
+          <h4 id="qheader">5. What is the preferred sexuality of your partner? (check all that apply)</h4>
+            <div class="col-sm-2" ></div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q14" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Heterosexual
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q15" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Homosexual
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q16" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Bisexual
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q16" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Asexual
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q16" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Pansexual
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q16" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Questioning
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" name="q17" value="1">
+                <label class="form-check-label" for="gridCheck1" id="question">
+                  Other
+                </label>
+              </div>
+              <div class="form-group">
+                <input placeholder="Other (Please specify)" type="text" class="form-control" id="other2" name="q18" maxlength="40" data-rule-required="false" contenteditable="false">
+              </div>
+
+            </div> 
+      </div>
+
+
+
+
+
+                <div>
+                    <h4 id="qheader">6. What is your favorite study location?</h4>
                     <div class="radio" id="options1">
-                        <label>
-                          <input type="radio" name="q1" id="optionsRadios1" value="Mills" checked>
+                        <label id="qlabel">
+                          <input type="radio" name="q19" id="optionsRadios1" value="1">
                           Mills
                         </label>
                       </div>
                       <div class="radio" id="options1">
-                        <label>
-                          <input type="radio" name="q1" id="optionsRadios1" value="Thode">
+                        <label id="qlabel">
+                          <input type="radio" name="q19" id="optionsRadios1" value="2">
                           Thode
+                        </label id="qlabel">
+                      </div>
+                      <div class="radio" id="options1">
+                        <label id="qlabel">
+                          <input type="radio" name="q19" id="optionsRadios1" value="3">
+                          Health Science Library
+                        </label id="qlabel">
+                      </div>
+                      <div class="radio" id="options1">
+                        <label id="qlabel">
+                          <input type="radio" name="q19" id="optionsRadios1" value="4">
+                          Student Center
                         </label>
                       </div>
                       <div class="radio" id="options1">
-                        <label>
-                          <input type="radio" name="q1" id="optionsRadios1" value="Home">
+                        <label id="qlabel">
+                          <input type="radio" name="q19" id="optionsRadios1" value="5">
+                          Starbucks / Williams
+                        </label>
+                      </div>
+                      <div class="radio" id="options1">
+                        <label id="qlabel">
+                          <input type="radio" name="q19" id="optionsRadios1" value="6">
                           Study at home
                         </label>
                       </div>
                 </div>
 
-                <button id="subbutton" type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
-            </form>
 
+                <div>
+                  <h4 id="qheader">7. What is your go-to drink when you're on campus?</h4>
+                  <div class="radio" id="options1">
+                      <label id="qlabel">
+                        <input type="radio" name="q20" id="optionsRadios1" value="1">
+                        Iced Capp from Tims
+                      </label>
+                    </div>
+                    <div class="radio" id="options1">
+                      <label id="qlabel">
+                        <input type="radio" name="q20" id="optionsRadios1" value="2">
+                        Starbucks
+                      </label>
+                    </div>
+                    <div class="radio" id="options1">
+                      <label id="qlabel">
+                        <input type="radio" name="q20" id="optionsRadios1" value="3">
+                        Bubble Tea
+                      </label>
+                    </div>
+                    <div class="radio" id="options1">
+                      <label id="qlabel">
+                        <input type="radio" name="q20" id="optionsRadios1" value="4">
+                        Booster Juice
+                      </label>
+                    </div>
+                    <div class="radio" id="options1">
+                      <label id="qlabel">
+                        <input type="radio" name="q20" id="optionsRadios1" value="5">
+                        Fountain Water from MUSC
+                      </label>
+                    </div>
+              </div>
+
+              <div>
+                <h4 id="qheader">8. What is your go-to food spot when you're on campus?</h4>
+                <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="1">
+                      Basilique
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="2">
+                      Centro
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="3">
+                      Lava Pizza
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="4">
+                      La Piazza
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="5">
+                      Mini Mac
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="6">
+                      Saigon
+                    </label>
+                  </div>
+                  <div class="radio" id="options1">
+                    <label id="qlabel">
+                      <input type="radio" name="q21" id="optionsRadios1" value="7">
+                      Gino's Pizza
+                    </label>
+                  </div>
+            </div>
+
+            <div>
+              <h4 id="qheader">9. Where do you place yourself politically? (1 is far left, 5 is far right)</h4>
+              <div class="radio" id="options1">
+                  <label id="qlabel">
+                    <input type="radio" name="q22" id="optionsRadios1" value="1">
+                    1 - Far Left
+                  </label>
+                </div>
+                <div class="radio" id="options1">
+                  <label id="qlabel">
+                    <input type="radio" name="q22" id="optionsRadios1" value="2">
+                    2
+                  </label>
+                </div>
+                <div class="radio" id="options1">
+                  <label id="qlabel">
+                    <input type="radio" name="q22" id="optionsRadios1" value="3">
+                    3 - In between
+                  </label>
+                </div>
+                <div class="radio" id="options1">
+                  <label id="qlabel">
+                    <input type="radio" name="q22" id="optionsRadios1" value="4">
+                    4
+                  </label>
+                </div>
+                <div class="radio" id="options1">
+                  <label id="qlabel">
+                    <input type="radio" name="q21" id="optionsRadios1" value="5">
+                    5 - Far Right
+                  </label>
+                </div>
+          </div>
+
+          <div>
+            <h4 id="qheader">10. Are you more driven or laid back in your approach to life?</h4>
+            <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q23" id="optionsRadios1" value="1">
+                  Driven
+                </label>
+              </div>
+              <div class="radio" id="options1">
+                <label id="qlabel">
+                  <input type="radio" name="q23" id="optionsRadios1" value="2">
+                  Laid Back
+                </label>
+              </div>
+        </div>
+
+        <div>
+          <h4 id="qheader">11. How clean is your room right now?</h4>
+          <div class="radio" id="options1">
+              <label id="qlabel">
+                <input type="radio" name="q24" id="optionsRadios1" value="1" >
+                Clean
+              </label>
+            </div>
+            <div class="radio" id="options1">
+              <label id="qlabel">
+                <input type="radio" name="q24" id="optionsRadios1" value="2">
+                Messy
+              </label>
+            </div>
+      </div>
+
+      <div>
+        <h4 id="qheader">12. What do you value most in a relationship?</h4>
+          <div class="radio" id="options1">
+            <label id="qlabel">
+              <input type="radio" name="q25" id="optionsRadios1" value="1">
+              Trust
+            </label>
+          </div>
+          <div class="radio" id="options1">
+            <label id="qlabel">
+              <input type="radio" name="q25" id="optionsRadios1" value="2">
+              Honesty
+            </label>
+          </div>
+          <div class="radio" id="options1">
+            <label id="qlabel">
+              <input type="radio" name="q25" id="optionsRadios1" value="3">
+              Experiences
+            </label>
+          </div>
+          <div class="radio" id="options1">
+            <label id="qlabel">
+              <input type="radio" name="q25" id="optionsRadios1" value="4">
+              Sense of humor
+            </label>
+          </div>
+          <div class="radio" id="options1">
+            <label id="qlabel">
+              <input type="radio" name="q25" id="optionsRadios1" value="5">
+              Kindness
+            </label>
+          </div>
+    </div>
+
+    <div>
+      <h4 id="qheader">13. How often do you consume recreational drugs and/or alcohol?</h4>
+        <div class="radio" id="options1">
+          <label id="qlabel">
+            <input type="radio" name="q24" id="optionsRadios1" value="1">
+            Never
+          </label>
+        </div>
+        <div class="radio" id="options1">
+          <label id="qlabel">
+            <input type="radio" name="q24" id="optionsRadios1" value="2">
+            Rarely
+          </label>
+        </div>
+        <div class="radio" id="options1">
+          <label id="qlabel">
+            <input type="radio" name="q24" id="optionsRadios1" value="3">
+            Occasionally
+          </label>
+        </div>
+        <div class="radio" id="options1">
+          <label id="qlabel">
+            <input type="radio" name="q24" id="optionsRadios1" value="4">
+            Frequently
+          </label>
+        </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">14. On a scale of 1 to 5, how much do you enjoy vibrant social events with lots of people?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q25" id="optionsRadios1" value="1">
+          1 - Hate them
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q25" id="optionsRadios1" value="2">
+          2
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q25" id="optionsRadios1" value="3">
+          3 - Neutral
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q25" id="optionsRadios1" value="4">
+          4
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q25" id="optionsRadios1" value="5">
+          5 - Love them 
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">15. Would you describe yourself as a good texter?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q26" id="optionsRadios1" value="1">
+          Yes
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q26" id="optionsRadios1" value="2">
+          No
+        </label id="qlabel">
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">16. What is your preferred mode of communication with friends during quarantine?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q27" id="optionsRadios1" value="1">
+          Mostly phone calls or video calls
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q27" id="optionsRadios1" value="2">
+          A mix of phone calls and messaging
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q27" id="optionsRadios1" value="2">
+          Mostly messaging (texting, messenger etc.)
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">17. Which of the following apps do you use the most?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="1">
+          Facebook
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="2">
+          Instagram
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="2">
+          Tiktok
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="2">
+          Netflix
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="2">
+          Youtube
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="2">
+          Reddit
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q28" id="optionsRadios1" value="2">
+          Twitter
+        </label>
+      </div>
+  </div>
+
+
+  <div>
+    <h4 id="qheader">18. How difficult has it been staying in during this pandemic?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q29" id="optionsRadios1" value="1">
+          Very difficult, I frequently miss going out 
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q29" id="optionsRadios1" value="2">
+          Somewhat difficult, I occassionally miss going out
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q29" id="optionsRadios1" value="2">
+          Not difficult, I rarely miss going out
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">19. What do you do on a typical night off?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q30" id="optionsRadios1" value="1">
+          Go clubbing or partying 
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q30" id="optionsRadios1" value="2">
+          Have a small gathering with family or friends
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q30" id="optionsRadios1" value="2">
+          Stay at home 
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">20. Which of the following do you prioritize in your life?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q31" id="optionsRadios1" value="1">
+          Love
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q31" id="optionsRadios1" value="2">
+          Knowledge
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q31" id="optionsRadios1" value="3">
+          Wealth 
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q31" id="optionsRadios1" value="4">
+          Freedom
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q31" id="optionsRadios1" value="5">
+          Justice 
+        </label>
+      </div>
+  </div>
+
+  
+  <div>
+    <h4 id="qheader">21. Is it a requirement that you communicate with your partner everyday (via phone, messaging, in person etc)?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q32" id="optionsRadios1" value="1">
+          Yes
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q32" id="optionsRadios1" value="2">
+          No
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">22. McMaster gifts you $100. What do you do with it?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q33" id="optionsRadios1" value="1"> 
+          Buy something for yourself
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q33" id="optionsRadios1" value="2">
+          Buy something for your friend(s)/ family 
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q33" id="optionsRadios1" value="3">
+          Save it for the future
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q33" id="optionsRadios1" value="4">
+          Donate it to charity
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">23. Which part of the university experience is most important to you?</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q34" id="optionsRadios1" value="1">
+          Academics
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q34" id="optionsRadios1" value="2">
+          Personal Growth
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q34" id="optionsRadios1" value="3">
+          Extracurricular activities
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q34" id="optionsRadios1" value="4">
+          Social Life
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q34" id="optionsRadios1" value="5">
+          A well-rounded experience
+        </label>
+      </div>
+  </div>
+
+  <div>
+    <h4 id="qheader">24. An ideal partner is:</h4>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q35" id="optionsRadios1" value="1">
+          someone who challenges me 
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q35" id="optionsRadios1" value="2">
+          someone to relax with and enjoy life
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q35" id="optionsRadios1" value="3">
+          someone to navigate life obstacles with 
+        </label>
+      </div>
+      <div class="radio" id="options1">
+        <label id="qlabel">
+          <input type="radio" name="q35" id="optionsRadios1" value="4">
+          someone understanding who I can confide in 
+        </label>
+      </div>
+  </div>
+
+
+
+                <button id="subbutton" type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 1rem;">Submit</button>
+            </form>
+            <p style="color: white;">Your personal information will be kept strictly confidential and will not be sold, reused, rented, loaned or otherwise disclosed.</p>
         </div>
     </body>
 </html>

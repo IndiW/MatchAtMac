@@ -22,22 +22,56 @@ body{
     margin-bottom: 1rem;
 }
 
+#homepage_image{
+    max-width: 50%;
+}
+
+#homepage_logo{
+    max-width: 10%;
+}
+
 #questions_header{
     color: white;
+    font-weight: bold;
 }
 
 #formlabels{
     color: white;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #question{
     color: white;
+    font-size: 1.5rem;
+}
+
+#qlabel{
+    font-size: 1.5rem
 }
 
 #options1{
     color: white;
+    font-size: 1.2rem;
 }
+
+#qheader{
+    margin-top: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+#Description2{
+    
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
 
 @media (max-width: 600px){
     #Description{
@@ -50,5 +84,13 @@ body{
 
     #begin_button{
         font-size: 1rem;
+    }
+
+    #homepage_image{
+        max-width: 100%;
+    }
+
+    #homepage_logo{
+        max-width: 20%;
     }
 }
